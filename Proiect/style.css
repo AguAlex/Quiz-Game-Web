@@ -81,7 +81,7 @@ header{
     padding: 5px
 }
 
-.btn{
+.btn, #drop_btn{
     cursor: pointer;
     background-color: rgb(210, 178, 178);
     border: none;
@@ -91,7 +91,58 @@ header{
     padding: 5px;
     
 }
+
+#drop_btn{
+    border-radius: 0;
+}
+
 .btn:hover{
     transform: scale(1.05);
     background-color: rgb(164, 163, 163);
+}
+
+#dropdown{
+    margin-left: 80%;
+    position: absolute;
+}
+
+
+#dropdown_content{
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top:1px;
+    background-color: rgba(210, 178, 178, 0.7);
+    width: 68px;
+}
+
+#dropdown_content:hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#dropdown:hover #dropdown_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dropdown_content a{
+    background-color: rgb(210, 178, 178);
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+#submit_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

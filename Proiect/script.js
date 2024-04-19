@@ -55,6 +55,10 @@ function resetScore(){
     perTxtH.textContent = "0%";
 }
 
+const submit_input = document.getElementById("submit_input");
+function submitScore(){
+    
+}
 
 checkScore();
 

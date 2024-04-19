@@ -10,15 +10,19 @@
     <header>
         <div>Welcome to my Quiz Game!
         </div>
-        <div id="social_media">
-            <a href="https://github.com/AguAlex">
-                <img class="logo" src="github_logo.png">
-            </a>
-            <a href="https://www.instagram.com/aguwxk/">
-                <img class="logo" style="margin-left: 20px;" src="instagram_logo.png">
-            </a>
-           
+
+        <div id="dropdown">
+            <button id="drop_btn">Contact</button>
+            <div id="dropdown_content">
+                <a href="https://github.com/AguAlex">
+                    <img class="logo" src="github_logo.png">
+                </a>
+                <a href="https://www.instagram.com/aguwxk/">
+                    <img class="logo" src="instagram_logo.png">
+                </a>
+            </div>
         </div>
+
     </header>
 
     <section id="quiz_section">
@@ -33,7 +37,7 @@
             </div>
             <div id="currentScoreH">
                 <div id="clickToStartH">
-                    <p>Click To START</p>
+                    <p>Click To Start</p>
                 </div>
 
                 <svg viewBox="0 0 36 36" width="100" height="100">
@@ -88,7 +92,7 @@
                  Quiz - JavaScript
             </div>
             <div style="display: flex; justify-content: center; margin-top: 20px;">
-                <img style="width: 400px; height: 100px;" src="js_logo.png">
+                <img style="width: 400px; height: 100px; object-fit: contain;" src="js_logo.png">
             </div>
             <div id="currentScoreJS">
                 <div id="clickToStartJ">
@@ -114,8 +118,16 @@
 
     
     </section>
-    <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <button onclick="resetScore()" class="btn">Reset Score</button>
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; flex-direction: column;">
+        <button onclick="resetScore()" class="btn" style="margin-bottom: 20px;">Reset Score</button>
+        <div id="submit_section">
+            <form type="text">
+                Your Name:
+                <input type="text" id="submit_input">
+            </form>
+            <button onclick="submitScore()" class="btn" style="margin-top: 5px;">Submit Score</button>
+
+        </div>
 
     </div>
     <script src="script.js" ></script>
